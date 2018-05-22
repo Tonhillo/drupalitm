@@ -1,0 +1,25 @@
+uuid: 0c4dea20-a30d-43f4-9c42-5c705366970c
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: actores_buenos
+label: 'Actores buenos'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      actor: actor
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+queue_settings:
+  min_size: 1
+  max_size: 3
+  act_as_queue: false
+  reverse_in_admin: false

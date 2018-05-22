@@ -1,0 +1,35 @@
+uuid: 2816e7e4-3dbf-4543-bde0-a694b18b6079
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.pelicula.body
+    - field.field.node.pelicula.field_actors
+    - node.type.pelicula
+  module:
+    - text
+    - user
+id: node.pelicula.default
+targetEntityType: node
+bundle: pelicula
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_actors:
+    weight: 102
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden: {  }

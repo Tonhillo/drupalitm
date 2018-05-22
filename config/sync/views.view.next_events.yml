@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.feature
     - field.storage.node.body
     - field.storage.node.field_date
     - field.storage.node.field_image
@@ -104,12 +105,10 @@ display:
           default_row_class: true
           uses_fields: false
       row:
-        type: fields
+        type: 'entity:node'
         options:
-          inline: {  }
-          separator: ''
-          hide_empty: false
-          default_field_elements: true
+          relationship: none
+          view_mode: feature
       fields:
         title:
           id: title

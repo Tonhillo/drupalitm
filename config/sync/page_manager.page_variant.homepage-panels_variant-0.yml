@@ -1,0 +1,41 @@
+uuid: ae500f8f-5ee0-4cf2-ad36-182140db3d29
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.homepage
+    - views.view.featured_articles
+  module:
+    - panels
+    - views
+id: homepage-panels_variant-0
+label: Panels
+variant: panels_variant
+variant_settings:
+  blocks:
+    bee83bb2-628d-4140-99bf-afb36910554c:
+      id: 'views_block:featured_articles-block_1'
+      label: ''
+      provider: views
+      label_display: visible
+      views_label: ''
+      items_per_page: none
+      region: top
+      weight: 0
+      uuid: bee83bb2-628d-4140-99bf-afb36910554c
+      context_mapping: {  }
+  id: panels_variant
+  uuid: fdbbac1b-526c-4479-9380-d32fdfc93464
+  label: null
+  weight: 0
+  layout: layout_twocol_bricks
+  layout_settings: {  }
+  page_title: Home
+  storage_type: page_manager
+  storage_id: homepage-panels_variant-0
+  builder: standard
+page: homepage
+weight: 0
+selection_criteria: {  }
+selection_logic: and
+static_context: {  }

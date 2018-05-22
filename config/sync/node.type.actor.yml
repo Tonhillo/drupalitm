@@ -1,0 +1,18 @@
+uuid: 3b205baa-e0a0-4b4c-8750-7574cbe306bf
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Actor
+type: actor
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true
