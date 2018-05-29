@@ -10,17 +10,17 @@ use Drupal\Core\Link;
 use Drupal\Core\Url;
 
 /**
- * Plugin implementation of the 'email_link_field_formatter' formatter.
+ * Plugin implementation of the 'email_link_fiel_formatter' formatter.
  *
  * @FieldFormatter(
- *   id = "email_link_field_formatter",
- *   label = @Translation("Email link field formatter"),
+ *   id = "email_link_fiel_formatter",
+ *   label = @Translation("Email link fiel formatter"),
  *   field_types = {
  *     "email"
  *   }
  * )
  */
-class EmailLinkFieldFormatter extends FormatterBase {
+class EmailLinkFielFormatter extends FormatterBase {
 
   /**
    * {@inheritdoc}
@@ -44,10 +44,10 @@ class EmailLinkFieldFormatter extends FormatterBase {
    * @return string
    *   The textual output generated.
    */
-  protected function viewValue(FieldItemInterface $item) {
-    $url = Url::fromUri('mailto:' . $item->value);
-    $link = Link::fromTextAndUrl($this->t('Send email'), $url);
-    return $link->toString();
+  protected function viewValue(FieldItemInterface $item) { 
+      $url = Url::fromUri('mailto:' .$item->value);
+      $link = Link::fromTextAndUrl($this->t('Enviar email'), $url);
+      return $link->toString();
   }
 
 }

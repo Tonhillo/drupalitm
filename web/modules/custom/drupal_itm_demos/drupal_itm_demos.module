@@ -4,16 +4,33 @@
  * @file
  * Module file for drupal_itm_demos.
  */
+
 use Drupal\Core\Form\FormStateInterface;
-use Drupal\Core\Routing\RouteMatchInterface;
 
 /**
  * Implements hook_form_alter().
  */
-function drupal_itm_demos_form_alter(&$form, FormStateInterface $form_state, $form_id) {
-  //ksm($form, $form_id);
-  if($form_id === 'user_form'){
-    $form['account'] ['name'] ['weight'] = -1;
-    $form['account'] ['mail'] ['weight'] = -2;
-  }
+function drupal_itm_demos_form_alter(&$form, FormStateInterface $form_state, $form_id)
+{
+    if ($form_id === 'user_form') {
+        $form['account']['name']['#weight'] = -1;
+        $form['account']['mail']['#weight'] = -2;
+    }
+}
+
+
+/**
+*Implements hook_theme().
+**/
+function drupal_itm_demos_theme()
+{
+    return [
+    'item_accordion' => [
+      'variables' => [
+        'title' => '',
+        'description' => '',
+      ],
+      'template' => 'item-accordion',
+    ],
+  ];
 }
