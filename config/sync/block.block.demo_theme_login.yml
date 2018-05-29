@@ -1,0 +1,22 @@
+uuid: 13006585-4b3a-488d-8675-68245d0e3885
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+  theme:
+    - demo_theme
+_core:
+  default_config_hash: IItlF4SKHgxduIysVQdvirDJ_v3HGuAviOkidAOJYRE
+id: demo_theme_login
+theme: demo_theme
+region: content
+weight: 10
+provider: null
+plugin: user_login_block
+settings:
+  id: user_login_block
+  label: 'User login'
+  provider: user
+  label_display: visible
+visibility: {  }

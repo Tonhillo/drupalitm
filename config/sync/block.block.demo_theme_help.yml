@@ -1,0 +1,22 @@
+uuid: bac153c6-d8ea-400b-b967-3f6d6fb1ab7b
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - demo_theme
+_core:
+  default_config_hash: NU5A_49mwLHfs5xFzMFrZ850w9pgUolxMS9NNF3vv4c
+id: demo_theme_help
+theme: demo_theme
+region: help
+weight: 0
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }
