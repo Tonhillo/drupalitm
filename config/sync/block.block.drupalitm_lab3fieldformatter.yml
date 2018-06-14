@@ -1,0 +1,20 @@
+uuid: f4b152de-c19e-49b9-aa99-90c2707ed996
+langcode: en
+status: true
+dependencies:
+  module:
+    - itm_lab3
+  theme:
+    - drupalitm
+id: drupalitm_lab3fieldformatter
+theme: drupalitm
+region: content
+weight: 0
+provider: null
+plugin: lab3field_formatter
+settings:
+  id: lab3field_formatter
+  label: 'Lab3field formatter'
+  provider: itm_lab3
+  label_display: visible
+visibility: {  }

@@ -1,0 +1,33 @@
+uuid: 8d8d662f-d059-40e5-8017-276a59f7c916
+langcode: en
+status: true
+dependencies:
+  module:
+    - ctools
+    - drupal_itm_demos
+  theme:
+    - bartik
+id: informationblock
+theme: bartik
+region: header
+weight: 0
+provider: null
+plugin: information_block
+settings:
+  id: information_block
+  label: 'Information block'
+  provider: drupal_itm_demos
+  label_display: visible
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      actor: actor
+      article: article
+      event: event
+      page: page
+      pelicula: pelicula
+      review: review
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
