@@ -1,6 +1,6 @@
 uuid: 0ec9b2cd-edf1-42df-88c5-a6be1bc88880
 langcode: en
-status: true
+status: false
 dependencies:
   theme:
     - drupalitm
@@ -9,7 +9,7 @@ _core:
 id: drupalitm_page_title
 theme: drupalitm
 region: header
-weight: -30
+weight: -5
 provider: null
 plugin: page_title_block
 settings:
