@@ -1,0 +1,20 @@
+uuid: f17b9cd8-14d8-4fa9-8706-10b1c0dd2bef
+langcode: en
+status: true
+dependencies:
+  module:
+    - itm_lab3
+  theme:
+    - bootstrap_barrio
+id: bootstrap_barrio_lab3fieldformatter
+theme: bootstrap_barrio
+region: content
+weight: 0
+provider: null
+plugin: lab3field_formatter
+settings:
+  id: lab3field_formatter
+  label: 'Lab3field formatter'
+  provider: itm_lab3
+  label_display: visible
+visibility: {  }

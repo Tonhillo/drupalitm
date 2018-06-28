@@ -1,4 +1,4 @@
-/* 
+/*
 Theme Name: Bootstrap 4 Sass
 Description: Bootstrap 4 with Sass
 */
@@ -14,7 +14,7 @@ body {
 }
 
 
-/* COLORS 
+/* COLORS
 --------------------------------------------------*/
 
 a {
@@ -61,4 +61,40 @@ a {
 
 .slick>div {
     margin: 0 15px;
+}
+
+.node .field--type-image {
+    float: none;
+}
+.node .field--type-image .image-style-large {
+    width: 100%;
+    max-width: 100%;
+}
+
+#main{
+    max-width: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.jumbotron{
+    padding: 0;
+    margin-bottom: 2%;
+    background: none;
+}
+
+.container-fluid{
+    padding: 0;
+}
+
+#main{
+    margin-left: 0;
+    margin-right: 0;
+    padding-right: 0;
+}
+
+#content{
+    padding-left: 0;
+    padding-right: 0;
 }

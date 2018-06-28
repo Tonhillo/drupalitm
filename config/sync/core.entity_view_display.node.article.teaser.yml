@@ -9,7 +9,8 @@ dependencies:
     - field.field.node.article.field_category
     - field.field.node.article.field_image
     - field.field.node.article.field_tags
-    - image.style.medium
+    - field.field.node.article.field_ts
+    - image.style.large
     - node.type.article
   module:
     - image
@@ -43,11 +44,12 @@ content:
     weight: 0
     region: content
     settings:
-      image_style: medium
+      image_style: large
       image_link: content
     third_party_settings: {  }
     label: hidden
 hidden:
   comment: true
   field_tags: true
+  field_ts: true
   links: true

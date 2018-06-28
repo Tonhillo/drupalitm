@@ -1,0 +1,20 @@
+uuid: bd939553-3ff4-4ce5-bf64-7107cbd49317
+langcode: en
+status: true
+dependencies:
+  module:
+    - itm_lab3
+  theme:
+    - demo_theme
+id: lab3fieldformatter
+theme: demo_theme
+region: content
+weight: 0
+provider: null
+plugin: lab3field_formatter
+settings:
+  id: lab3field_formatter
+  label: 'Lab3field formatter'
+  provider: itm_lab3
+  label_display: visible
+visibility: {  }

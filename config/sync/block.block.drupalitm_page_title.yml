@@ -1,0 +1,20 @@
+uuid: 0ec9b2cd-edf1-42df-88c5-a6be1bc88880
+langcode: en
+status: false
+dependencies:
+  theme:
+    - drupalitm
+_core:
+  default_config_hash: ZSpc3IoSaLd0PkB02nxjVPBMztIdsTdHek9SiGaqZ_c
+id: drupalitm_page_title
+theme: drupalitm
+region: header
+weight: -5
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

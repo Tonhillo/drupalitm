@@ -1,0 +1,22 @@
+uuid: 9860f927-c118-41f3-935a-6da3a24b1973
+langcode: en
+status: false
+dependencies:
+  theme:
+    - drupalitm
+_core:
+  default_config_hash: ddy1OsBbWxjwEI8VL1viD4I69qcLHOkul4BxbTqLBTs
+id: drupalitm_primary_local_tasks
+theme: drupalitm
+region: header
+weight: 0
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Primary tabs'
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: false
+visibility: {  }
